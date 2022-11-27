@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var c = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-       Zikr()
+       
     }
     @IBAction func btn(_ sender: UIButton) {
         
@@ -26,22 +26,22 @@ class ViewController: UIViewController {
             a = 0
             b = b + 1
         }
-        
-        lbltext.text = String(a)
-        lbl2text.text = String(b)
-    }
-    
-    func Zikr () {
         if b == 0 {
             lbl3.text = "Subhanolloh"
         } else if b == 1 {
             lbl3.text = "Alhamdulillah"
         } else if b == 2  {
             lbl3.text = "Allohu Akbar"
+        } else {
+            lbl3.text = ""
         }
-        Zikr()
+        lbltext.text = String(a)
+        lbl2text.text = String(b)
+        
+        
+        
+        
     }
-    
     
     @IBAction func btn2(_ sender: UIButton) {
         a = 0
